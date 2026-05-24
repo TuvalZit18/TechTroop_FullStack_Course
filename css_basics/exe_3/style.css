@@ -1,0 +1,16 @@
+a > img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+
+  border: 2px solid white;
+  border-radius: 10px;
+
+  padding: 2px;
+  transition: 0.3s ease;
+}
+
+a > img:hover {
+  border-color: yellow;
+  transform: scale(1.05);
+}
