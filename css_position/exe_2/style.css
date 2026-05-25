@@ -1,0 +1,59 @@
+/* For First Option */
+#parent {
+  background-color: blue;
+  position: relative;
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+}
+.child {
+  background-color: red;
+  position: absolute;
+}
+#child-1 {
+  width: 100%;
+  height: calc(100% / 14);
+  top: 20px;
+}
+#child-2 {
+  height: 100%;
+  width: calc(100% / 14);
+  left: 20px;
+}
+/* For Second Option */
+.red {
+  background-color: red;
+  position: relative;
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+}
+.blue {
+  background-color: blue;
+  position: absolute;
+}
+.top-left {
+  top: 0;
+  left: 0;
+  height: calc((100% / 14) + 2px);
+  width: calc(100% / 10);
+}
+.top-right {
+  top: 0;
+  right: 0;
+  height: calc((100% / 14) + 2px);
+  width: calc(100% - 100% / 10 - 20px);
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  height: calc(100% - 100% / 10 - 12px);
+  width: calc(100% / 10);
+}
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  height: calc(100% - 100% / 10 - 12px);
+  width: calc(100% - 100% / 10 - 20px);
+}
