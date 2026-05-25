@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+.container {
+  display: inline-block;
+  width: 40%;
+  font-size: 0; /* removes inline-block whitespace issue */
+  border: 2px solid palevioletred;
+}
+.container > div {
+  width: calc(100% / 3);
+  background-color: pink;
+  height: 100px;
+  display: inline-block;
+  border: solid black;
+  box-sizing: border-box;
+}
