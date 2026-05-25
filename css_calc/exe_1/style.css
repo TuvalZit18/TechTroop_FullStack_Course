@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-size: 0; /* removes inline-block whitespace issue */
+}
+
+div {
+  display: inline-block;
+  height: 50px;
+}
+
+.big-div {
+  width: calc(100% - 20px);
+  background-color: pink;
+}
+
+.small-div {
+  width: 20px;
+  background-color: red;
+}
