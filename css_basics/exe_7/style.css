@@ -1,0 +1,23 @@
+body {
+  background-image: url("https://i.redd.it/v303fhu204681.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 240px;
+  padding: 50px;
+}
+
+h1.solid-background-header {
+  background-color: blueviolet;
+  width: 2000px;
+}
+h1.transparent-header {
+  opacity: 0.3;
+  background-color: white;
+  width: 2000px;
+}
