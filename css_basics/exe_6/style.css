@@ -1,0 +1,37 @@
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: 2px solid grey;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 500px;
+  height: 500px;
+  object-fit: fill;
+}
+h1 {
+  text-align: center;
+  font-size: 48px;
+}
+a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid grey;
+  width: fit-content;
+  padding: 10px;
+  margin-top: 3px;
+  border-radius: 5px;
+  border: solid black;
+  background-color: beige;
+  text-decoration: none;
+  transition: ease 2ms;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  transform: scale(1.05);
+}
