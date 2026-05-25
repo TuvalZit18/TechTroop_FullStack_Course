@@ -1,0 +1,130 @@
+body {
+  background: #050d1a;
+  font-family: "Share Tech Mono", monospace;
+  padding: 2rem 1.5rem 3rem;
+  margin: 0;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #00f0ff;
+  text-shadow:
+    0 0 8px #00f0ff,
+    0 0 20px #00f0ff88;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 13px;
+  color: #4aaabb;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  opacity: 0.7;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #00f0ff44;
+  box-shadow:
+    0 0 30px #00f0ff22,
+    0 0 60px #7b2fff11;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 20, 50, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font-size: 13px;
+  font-family: "Share Tech Mono", monospace;
+}
+
+thead tr {
+  background: rgba(0, 240, 255, 0.08);
+  border-bottom: 1px solid #00f0ff66;
+}
+
+th {
+  padding: 14px 16px;
+  color: #00f0ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  text-shadow: 0 0 6px #00f0ff;
+  white-space: nowrap;
+}
+
+td {
+  padding: 13px 16px;
+  color: #c8f0ff;
+  border-bottom: 1px solid rgba(0, 240, 255, 0.1);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: rgba(0, 240, 255, 0.07);
+}
+
+.lang-name {
+  color: #ffffff;
+  font-size: 15px;
+  text-shadow:
+    0 0 8px #7b2fff,
+    0 0 2px #fff;
+}
+
+.year {
+  color: #7b2fff;
+  text-shadow: 0 0 6px #7b2fff;
+}
+
+.difficulty {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.d-beginner {
+  border: 1px solid #00ff88;
+  color: #00ff88;
+  text-shadow: 0 0 6px #00ff88;
+  box-shadow: 0 0 6px #00ff8833;
+}
+.d-intermediate {
+  border: 1px solid #00f0ff;
+  color: #00f0ff;
+  text-shadow: 0 0 6px #00f0ff;
+  box-shadow: 0 0 6px #00f0ff33;
+}
+.d-advanced {
+  border: 1px solid #ff3d6e;
+  color: #ff3d6e;
+  text-shadow: 0 0 6px #ff3d6e;
+  box-shadow: 0 0 6px #ff3d6e33;
+}
+
+.salary {
+  color: #00ff88;
+  text-shadow: 0 0 6px #00ff8866;
+  white-space: nowrap;
+}
+
+.frameworks {
+  color: #a89dff;
+  font-size: 12px;
+}

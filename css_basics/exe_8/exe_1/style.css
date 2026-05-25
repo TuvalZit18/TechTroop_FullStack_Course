@@ -1,0 +1,56 @@
+body {
+  background-color: #0a0e27;
+}
+
+h1 {
+  justify-self: center;
+  color: #e8f0ff;
+}
+
+h2,
+h3 {
+  color: #e8f0ff;
+}
+
+hr {
+  height: 1px;
+  background: linear-gradient(to right, #00ffff, #8a2be2);
+  border: none;
+}
+
+div {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 5px solid #00ffff;
+  border-radius: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: -4px 0 12px rgba(0, 255, 255, 0.4);
+}
+div.violet {
+  border-left-color: violet;
+  box-shadow: -4px 0 12px rgba(238, 110, 238, 0.4);
+}
+
+div.green {
+  border-left-color: #00ff66;
+  box-shadow: -4px 0 12px rgba(0, 255, 102, 0.4);
+}
+
+p {
+  color: #e0f7ff;
+  text-align: justify;
+}
+span {
+  color: #00ffff;
+  font-weight: bold;
+}
+span.violet {
+  color: violet;
+}
+span.green {
+  color: #00ff66;
+}
+#shortTerm {
+  margin-left: 20px;
+}

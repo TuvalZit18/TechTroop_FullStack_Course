@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Contact Us</h1>
+      <form>
+        <fieldset class="section-personal">
+          <legend>Personal Information</legend>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your@email.com" />
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="(555) 123-4567"
+              pattern="\([0-9]{3}\)\s[0-9]{3}-[0-9]{4}" />
+          </div>
+        </fieldset>
+
+        <fieldset class="section-message">
+          <legend>Message Details</legend>
+          <div class="field">
+            <label for="subjects">Subject</label>
+            <select name="subjects" id="subjects">
+              <option value="meeting_reminder">Meeting reminder</option>
+              <option value="project_update">Project update</option>
+              <option value="quick_question">Quick question</option>
+              <option value="schedule_change">Schedule change</option>
+              <option value="feedback_request">Feedback request</option>
+            </select>
+          </div>
+          <div class="radio-group">
+            <div class="radio-btn">
+              <input type="radio" id="low" name="priority" value="low" />
+              <label for="low">Low</label>
+            </div>
+            <div class="radio-btn">
+              <input type="radio" id="medium" name="priority" value="medium" />
+              <label for="medium">Medium</label>
+            </div>
+            <div class="radio-btn">
+              <input type="radio" id="high" name="priority" value="high" />
+              <label for="high">High</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="section-prefs">
+          <legend>Preferences</legend>
+          <div class="check-row">
+            <input type="checkbox" id="newsletter" name="newsletter" />
+            <label for="newsletter">Subscribe to newsletter</label>
+          </div>
+          <div class="field">
+            <label for="contact_method">Contact Method</label>
+            <select name="contact_method" id="contact_method">
+              <option value="email_method">Email</option>
+              <option value="sms_method">SMS</option>
+              <option value="whatsapp_method">WhatsApp</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <div class="actions">
+          <button type="submit" class="btn-primary">Send Message</button>
+          <button type="reset" class="btn-reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
