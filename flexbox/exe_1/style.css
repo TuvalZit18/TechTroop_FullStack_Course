@@ -1,0 +1,130 @@
+/* FlexBox Froggy */
+
+/* Level 1 */
+#pond1 {
+  display: flex;
+  justify-content: flex-end;
+}
+/* Level 2 */
+#pond2 {
+  display: flex;
+  justify-content: center;
+}
+/* Level 3 */
+#pond3 {
+  display: flex;
+  justify-content: space-around;
+}
+#pond4 {
+  display: flex;
+  justify-content: space-between;
+}
+#pond5 {
+  display: flex;
+  align-items: flex-end;
+}
+#pond6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pond7 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+#pond8 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#pond9 {
+  display: flex;
+  flex-direction: column;
+}
+#pond10 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+#pond11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#pond12 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+#pond13 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: center;
+}
+#pond14 {
+  display: flex;
+}
+
+.yellow14 {
+  order: 2;
+}
+#pond15 {
+  display: flex;
+}
+
+.red15 {
+  order: -1;
+}
+#pond16 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.yellow16 {
+  align-self: flex-end;
+}
+#pond17 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.yellow17 {
+  order: 1;
+  align-self: flex-end;
+}
+#pond18 {
+  display: flex;
+  flex-wrap: wrap;
+}
+#pond19 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#pond20 {
+  display: flex;
+  flex-flow: column wrap;
+}
+#pond21 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+#pond22 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+#pond23 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-content: center;
+}
+#pond24 {
+  display: flex;
+  flex-flow: column-reverse wrap-reverse;
+  justify-content: center;
+  align-content: space-between;
+}
