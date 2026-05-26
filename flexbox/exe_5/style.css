@@ -1,0 +1,31 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 500px;
+  background-color: #dcdcdc;
+  margin: auto;
+}
+.row-item {
+  width: 80%;
+}
+.box-flex-container {
+  display: flex;
+}
+.box-flex-container-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.box {
+  width: 100%;
+  background-color: #6495ec;
+  margin: 2px;
+  aspect-ratio: 1/1;
+}
+.big-box-container {
+  display: flex;
+  flex: 1;
+}
