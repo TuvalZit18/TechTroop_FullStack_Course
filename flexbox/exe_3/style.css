@@ -1,0 +1,21 @@
+.flex-container {
+  display: flex;
+  border: solid grey;
+}
+.column-item {
+  border: solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 500px;
+}
+.circle {
+  width: 250px;
+  height: 250px;
+  background-color: teal;
+  border-radius: 200px;
+}
+.description {
+  width: 90%;
+}
