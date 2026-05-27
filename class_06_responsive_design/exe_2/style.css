@@ -1,0 +1,36 @@
+h1 {
+  width: 24px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+p {
+  width: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 601px) {
+  h1 {
+    width: 36px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  p {
+    width: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+@media (min-width: 901px) {
+  h1 {
+    width: 48px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  p {
+    width: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
