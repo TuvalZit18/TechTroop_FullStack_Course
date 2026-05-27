@@ -22,6 +22,7 @@ body {
   margin: 0;
   list-style: none;
   background: linear-gradient(to left, #00ffff, #8a2be2);
+  height: 60px;
 }
 .nav-menu-item {
   display: flex;
@@ -31,6 +32,7 @@ body {
 }
 .nav-menu-item > a:hover {
   background-color: rgba(255, 255, 255, 0.3);
+  border-bottom: solid red;
 }
 .nav-menu-item:hover > .dropdown-container {
   display: block;
@@ -49,7 +51,7 @@ body {
 .dropdown-container {
   display: none;
   position: absolute;
-  top: 108%;
+  top: 100%;
   width: 150px;
   background-color: #f9fafb;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
