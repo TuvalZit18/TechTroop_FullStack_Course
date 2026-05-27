@@ -1,15 +1,19 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
 .flex-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  width: 80%;
-  height: 500px;
+  justify-content: space-around;
+  width: 40%;
   background-color: #dcdcdc;
   margin: auto;
+  height: 80%;
 }
 .row-item {
-  width: 80%;
+  width: 40%;
 }
 .box-flex-container {
   display: flex;
@@ -24,8 +28,4 @@
   background-color: #6495ec;
   margin: 2px;
   aspect-ratio: 1/1;
-}
-.big-box-container {
-  display: flex;
-  flex: 1;
 }
