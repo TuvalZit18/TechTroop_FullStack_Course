@@ -2,27 +2,36 @@
   box-sizing: border-box; /* ← add this */
 }
 body {
-  margin: 0px;
-  background: linear-gradient(to left, #00ffff, #8a2be2);
+  display: flex;
+  justify-content: center;
   height: 100vh;
+  width: 100wh;
+  margin: 0px;
+  padding: 30px;
+  background: linear-gradient(to left, #00ffff, #8a2be2);
 }
 .card-container {
   display: flex;
   flex-wrap: wrap;
   border-radius: 10px;
   width: 50%;
+  height: 70%;
   background-color: white;
-  margin: auto;
-  margin-top: 100px;
 }
 .card-item-image {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  background: linear-gradient(to top, #00ffff, #8a2be2);
+  border-radius: 10px 10px 0px 0px;
 }
 .card-item-image img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
+  object-fit: cover;
+  min-height: 0;
+  border-radius: 99px;
+  width: 100px;
+  height: 100px;
 }
 .card-item-description {
   display: flex;
@@ -31,11 +40,14 @@ body {
 .description-card-container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
   background-color: white;
-  padding: 20px;
-  border: solid black;
-  height: auto;
-  justify-content: center;
+  padding: 30px;
+  border-radius: 0px 0px 10px 10px;
+}
+.description-card-container > h1,
+.description-card-container > p {
   text-align: center;
 }
 .description-card-footer {
@@ -51,7 +63,6 @@ body {
 .description-card-footer-item > span {
   color: red;
   font-weight: bolder;
-  line-height: 1;
   font-size: 32px;
 }
 .description-card-footer-item > button {
@@ -63,8 +74,12 @@ body {
   width: 100%;
 }
 @media (min-width: 601px) {
+  .card-container {
+    height: 50%;
+  }
   .card-item-image {
     width: 100%;
+    border-radius: 10px 10px 0px 0px;
   }
   .card-item-description {
     width: 100%;
@@ -72,19 +87,32 @@ body {
   .description-card-container {
     text-align: initial;
   }
+  .description-card-container > h1,
+  .description-card-container > p {
+    text-align: initial;
+  }
   .description-card-footer-item {
     width: auto;
   }
 }
 @media (min-width: 901px) {
+  .card-container {
+    height: 30%;
+  }
   .card-item-image {
     width: 40%;
+    border-radius: 10px 0px 0px 10px;
   }
   .card-item-description {
     width: 60%;
   }
   .description-card-container {
     text-align: start;
+    border-radius: 0px 10px 10px 0px;
+  }
+  .description-card-container > h1,
+  .description-card-container > p {
+    text-align: initial;
   }
   .description-card-footer-item {
     width: auto;
