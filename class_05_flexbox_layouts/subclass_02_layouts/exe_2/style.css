@@ -29,10 +29,10 @@ body {
   position: relative;
   margin-inline: 20px;
   border-radius: 5px 5px 0px 0px;
+  align-items: center;
 }
 .nav-menu-item > a:hover {
   background-color: rgba(255, 255, 255, 0.3);
-  border-bottom: solid red;
 }
 .nav-menu-item:hover > .dropdown-container {
   display: block;
@@ -46,7 +46,7 @@ body {
 .nav-menu-item:nth-child(6) {
   flex: 1;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
 }
 .dropdown-container {
   display: none;
