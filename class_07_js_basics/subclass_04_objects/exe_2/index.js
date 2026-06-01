@@ -1,0 +1,10 @@
+let library = {
+  books: [
+    { title: "book1", author: "author1" },
+    { title: "book2", author: "author2" },
+    { title: "book3", author: "author3" },
+    { title: "book4", author: "author4" },
+    { title: "book5", author: "author5" },
+  ],
+};
+console.log("🚀 ~ library:", library);

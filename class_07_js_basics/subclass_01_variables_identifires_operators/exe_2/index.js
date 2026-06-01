@@ -1,0 +1,11 @@
+let a = 3;
+let c = 0;
+let b = a;
+b = a;
+console.log("🚀 ~ b:", b); //b = 3
+c = a;
+console.log("🚀 ~ c:", c); // c = 3
+b = c;
+console.log("🚀 ~ b:", b); // b = 3
+a = b;
+console.log("🚀 ~ a:", a); // a = 3
