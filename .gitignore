@@ -1,2 +1,4 @@
 # Ignore VS Code configuration directory
 .vscode/
+
+node_modules
