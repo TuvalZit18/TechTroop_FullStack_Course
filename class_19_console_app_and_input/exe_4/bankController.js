@@ -1,3 +1,4 @@
+//==================================Imports Start========================================
 import { Bank } from "./bank.js";
 import {
   printInstructions,
@@ -8,8 +9,11 @@ import {
   getOption,
   printError,
 } from "./bankView.js";
+//==================================Imports End========================================
+
 let bank = new Bank();
 let option;
+
 do {
   printInstructions();
   option = getOption();
@@ -17,6 +21,7 @@ do {
     case 1:
       printBalance(bank.getBalance(), false);
       break;
+
     case 2: {
       let depositAmount = getDeposit();
       let isMoneyTransactionSucceed = bank.deposit(depositAmount);
@@ -25,6 +30,7 @@ do {
         : printError(Bank.errorCodes.DEPOSIT_FAILURE);
       break;
     }
+
     case 3: {
       let withdrawAmount = getWithdrow();
       let isMoneyTransactionSucceed = bank.withdraw(withdrawAmount);
@@ -33,9 +39,11 @@ do {
         : printError(Bank.errorCodes.WITHDRAW_FAILURE);
       break;
     }
+
     case 4:
       printExit();
       break;
+
     default:
       printError("Wrong Option");
       break;
