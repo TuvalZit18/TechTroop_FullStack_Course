@@ -1,9 +1,11 @@
-import { simplify } from ".";
-test("//should remove special characters from string", () => {
-  const input = "!#.,'";
-  const result = simplify(input);
+import { add } from ".";
+import { jest } from "@jest/globals";
 
-  const input2 = "123!#.,'123";
-  const result2 = simplify(input2);
-  expect(result2.length).toBe(6);
+test("//should add new value to the array", () => {
+  const pushSpy = jest.spyOn(Array.prototype, "push");
+
+  add(1, 2);
+  expect(pushSpy).toHaveBeenCalled();
+  expect(pushSpy).toHaveBeenCalledWith(1, 2);
+  pushSpy.mockRestore();
 });
