@@ -1,0 +1,45 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+.header {
+  margin: auto;
+  display: flex;
+  width: 50%;
+  border: solid pink;
+}
+
+.postCard {
+  display: flex;
+  padding: 40px;
+  border: solid #2f2a25;
+  background-color: #fffaf0;
+  flex: 1;
+}
+.name-text {
+  font-weight: bolder;
+}
+.wish-text {
+  font-weight: normal;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
+  width: 50%;
+  list-style-type: none;
+  margin: auto;
+}
+ul li {
+  display: flex; /* make li a flex container too */
+  width: calc(33.33% - (10px));
+}
+#inputName {
+  margin-left: 50%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
