@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-card {
+  background-color: #1abc9c;
+  border: solid 2px #16a085;
+  width: 25%;
+  height: 50%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.mid-container {
+  display: flex;
+  justify-content: space-between;
+}
+#input-container-half {
+  width: 45%;
+}
+
+.error-message {
+  color: red;
+  font-weight: 700;
+}
+.form-footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
