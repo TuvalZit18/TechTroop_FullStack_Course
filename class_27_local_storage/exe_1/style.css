@@ -1,0 +1,282 @@
+:root {
+  --ink: #0d0b14;
+  --surface: #1a1625;
+  --surface-deep: #2d1b4e;
+  --gold: #c9a66b;
+  --gold-bright: #e3c989;
+  --text: #e8e3f0;
+  --text-dim: #9b93ad;
+  --violet-line: #6b4fa0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/**
+That's an accessibility media query. prefers-reduced-motion: reduce matches when someone has turned on a system-level setting (in macOS, Windows, iOS, Android accessibility settings) saying they want reduced motion, usually because animations cause them discomfort, distraction, or vestibular issues (dizziness/nausea from motion).
+*/
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--ink);
+  background-image:
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(107, 79, 160, 0.18),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(201, 166, 107, 0.08),
+      transparent 50%
+    );
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* faint star/sparkle field, purely decorative */
+.stage {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(1px 1px at 10% 20%, rgba(232, 227, 240, 0.4), transparent),
+    radial-gradient(1px 1px at 80% 15%, rgba(232, 227, 240, 0.3), transparent),
+    radial-gradient(1px 1px at 60% 70%, rgba(201, 166, 107, 0.4), transparent),
+    radial-gradient(1px 1px at 30% 85%, rgba(232, 227, 240, 0.3), transparent),
+    radial-gradient(1px 1px at 90% 60%, rgba(201, 166, 107, 0.3), transparent);
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.main-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 20px 80px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-eyebrow {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+  opacity: 0.85;
+}
+
+.header-title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 44px;
+  margin: 0;
+  letter-spacing: 0.01em;
+  background: linear-gradient(135deg, var(--gold-bright), var(--text) 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-sub {
+  font-style: italic;
+  font-family: "Cormorant Garamond", serif;
+  color: var(--text-dim);
+  font-size: 17px;
+  margin: 10px 0 0;
+}
+
+/* the "velvet table" the input sits on */
+.table {
+  width: 100%;
+  background: linear-gradient(160deg, var(--surface-deep), var(--surface));
+  border: 1px solid rgba(201, 166, 107, 0.25);
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow:
+    0 1px 0 rgba(232, 227, 240, 0.04) inset,
+    0 20px 40px -20px rgba(0, 0, 0, 0.6);
+}
+
+.inputMessage {
+  width: 100%;
+  background: rgba(13, 11, 20, 0.55);
+  border: 1px solid rgba(201, 166, 107, 0.3);
+  border-radius: 8px;
+  padding: 14px 16px;
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.inputMessage::placeholder {
+  color: var(--text-dim);
+}
+
+.inputMessage:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 166, 107, 0.15);
+}
+
+.table-actions {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.2s ease;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 2px;
+}
+
+.btnAdd {
+  flex: 1;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+  color: #1a1304;
+  letter-spacing: 0.03em;
+}
+
+.btnAdd:hover {
+  box-shadow: 0 0 18px rgba(201, 166, 107, 0.45);
+  transform: translateY(-1px);
+}
+
+.btnClear {
+  padding: 12px 18px;
+  background: transparent;
+  color: var(--text-dim);
+  border-color: rgba(155, 147, 173, 0.3);
+}
+
+.btnClear:hover {
+  color: #e08b8b;
+  border-color: rgba(224, 139, 139, 0.4);
+}
+
+.remove-btn {
+  background: transparent;
+  border: 1px solid rgba(201, 166, 107, 0.3);
+  color: #9b93ad;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.remove-btn:hover {
+  background: rgba(224, 139, 139, 0.15);
+  border-color: rgba(224, 139, 139, 0.5);
+  color: #e08b8b;
+}
+
+.wisdom-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.wisdom-container:empty {
+  margin-top: 0;
+}
+
+/* each wisdom entry styled like a drawn card */
+.wisdom-card {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: var(--surface);
+  border: 1px solid rgba(201, 166, 107, 0.22);
+  border-left: 3px solid var(--gold);
+  border-radius: 10px;
+  padding: 16px 18px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--text);
+  animation: deal 0.4s ease-out;
+}
+/*Deal Card Animation*/
+@keyframes deal {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.empty-state {
+  color: var(--text-dim);
+  font-style: italic;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  margin-top: 28px;
+  display: none;
+}
+
+.empty-state.visible {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 34px;
+  }
+
+  .table-actions {
+    flex-direction: column;
+  }
+}
