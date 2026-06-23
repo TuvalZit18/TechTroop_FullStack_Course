@@ -7,8 +7,8 @@ const Exe2 = () => {
   const tempretures = [7, 18, 36];
 
   const showWeather = (temps) => {
-    return temps.map((temp) => (
-      <div id="weatherBox" className={getClassName(temp)}>
+    return temps.map((temp, index) => (
+      <div id="weatherBox" className={getClassName(temp)} key={index}>
         {temp}
       </div>
     ));

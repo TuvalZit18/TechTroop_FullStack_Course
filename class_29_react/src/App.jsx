@@ -1,13 +1,9 @@
-import Exe1 from "./classes/react_basics/exe_1/Exe1";
-import Exe2 from "./classes/react_basics/exe_2/Exe2";
+import ReactBasics from "./classes/react_basics/ReactBasics";
 
 function App() {
   return (
     <div>
-      <h1>React Basics</h1>
-      <Exe1></Exe1>
-      <Exe2></Exe2>
-      <h1>React Component</h1>
+      <ReactBasics></ReactBasics>
     </div>
   );
 }

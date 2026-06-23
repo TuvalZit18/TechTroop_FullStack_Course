@@ -6,7 +6,10 @@ const Exe1 = () => {
   ];
 
   const showCompany = (name, revenue) => (
-    <div id={name}>{`${name} makes ${revenue} revenues every year`}</div>
+    <div
+      id={name}
+      key={name}
+    >{`${name} makes ${revenue} revenues every year`}</div>
   );
 
   return (
