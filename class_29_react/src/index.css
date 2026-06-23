@@ -137,3 +137,7 @@ p {
   gap: 20px;
   justify-content: center;
 }
+#react-components-ex-2 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}

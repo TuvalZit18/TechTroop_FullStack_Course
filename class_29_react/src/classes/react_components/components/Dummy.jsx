@@ -1,8 +1,8 @@
 const Dummy = () => {
   return (
     <>
-      <input />
-      <button></button>
+      <input placeholder="Dummy Input..." />
+      <button>Dummy</button>
     </>
   );
 };

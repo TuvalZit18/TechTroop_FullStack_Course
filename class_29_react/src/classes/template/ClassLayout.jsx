@@ -1,4 +1,4 @@
-const ExeLayout = ({ name, children }) => {
+const ClassLayout = ({ name, children }) => {
   return (
     <div>
       <h1>{name}</h1>
@@ -7,4 +7,4 @@ const ExeLayout = ({ name, children }) => {
   );
 };
 
-export default ExeLayout;
+export default ClassLayout;
